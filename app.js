@@ -1,18 +1,18 @@
-var form = document.getElementById("form");
-var content = document.getElementById("container");
-var success = document.getElementById("success");
-var mailSpan = document.getElementById("email-success");
-var dismiss = document.getElementById("dismiss");
-var mailInput = document.getElementById("email");
-var mailError = document.getElementById("mail-error");
+const form = document.getElementById("form");
+const content = document.getElementById("container");
+const success = document.getElementById("success");
+const mailSpan = document.getElementById("email-success");
+const dismiss = document.getElementById("dismiss");
+const mailInput = document.getElementById("email");
+const mailError = document.getElementById("mail-error");
 
 console.log(form);
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  var emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-  var email = document.getElementById("email").value;
+  const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  const email = document.getElementById("email").value;
 
   if (emailRegex.test(email)) {
     content.style.display = "none";

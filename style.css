@@ -23,6 +23,7 @@ p {
 
 .container {
   width: 100%;
+  max-width: 540px;
   display: flex;
   flex-direction: column;
 }
@@ -126,7 +127,7 @@ label {
   color: hsl(234, 29%, 20%);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1000px) {
   body {
     height: 100vh;
     display: flex;
@@ -142,6 +143,7 @@ label {
     align-items: center;
     background-color: #fff;
     width: 60%;
+    max-width: 60%;
     border-radius: 35px;
   }
 
